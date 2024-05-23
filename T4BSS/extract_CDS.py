@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 11 10:54:05 2024
+
+@author: Zelia
+"""
+
 # Reading file names from Fisci_genes_name.txt
 with open('Fisci_genes_name.txt', 'r') as names_file:
     file_names = [line.strip() for line in names_file]

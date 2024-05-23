@@ -1,0 +1,26 @@
+
+icmW contig_1	Prodigal:002006	CDS	1128884	1129354	.	-	0	ID=AAONHMLN_01187;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01187;product=hypothetical protein
+icmV contig_1	Prodigal:002006	CDS	1129463	1129906	.	+	0	ID=AAONHMLN_01188;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01188;product=hypothetical protein
+dotA_1 contig_1	Prodigal:002006	CDS	1129923	1130243	.	+	0	ID=AAONHMLN_01189;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01189;product=hypothetical protein
+dotA_2 contig_1	Prodigal:002006	CDS	1130213	1130788	.	+	0	ID=AAONHMLN_01190;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01190;product=hypothetical protein
+
+
+
+icmD contig_1	Prodigal:002006	CDS	1326673	1329003	.	-	0	ID=AAONHMLN_01411;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01411;product=hypothetical protein
+icmP contig_1	Prodigal:002006	CDS	1329000	1330244	.	-	0	ID=AAONHMLN_01412;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01412;product=hypothetical protein
+icmS contig_1	Prodigal:002006	CDS	1330253	1330591	.	-	0	ID=AAONHMLN_01413;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01413;product=hypothetical protein
+dotD contig_1	Prodigal:002006	CDS	1330762	1331280	.	+	0	ID=AAONHMLN_01414;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01414;product=hypothetical protein
+dotC contig_1	Prodigal:002006	CDS	1331280	1332101	.	+	0	ID=AAONHMLN_01415;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01415;product=hypothetical protein
+dotB contig_1	Prodigal:002006	CDS	1332094	1333233	.	+	0	ID=AAONHMLN_01416;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01416;product=hypothetical protein
+icmT contig_1	Prodigal:002006	CDS	1333292	1333567	.	+	0	ID=AAONHMLN_01417;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01417;product=hypothetical protein
+icmM contig_1	Prodigal:002006	CDS	1333672	1333884	.	+	0	ID=AAONHMLN_01418;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01418;product=hypothetical protein
+
+icmK contig_1	Prodigal:002006	CDS	1349757	1350761	.	+	0	ID=AAONHMLN_01436;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01436;product=hypothetical protein
+icmE contig_1	Prodigal:002006	CDS	1350765	1352885	.	+	0	ID=AAONHMLN_01437;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01437;product=hypothetical protein
+icmG contig_1	Prodigal:002006	CDS	1352922	1354130	.	+	0	ID=AAONHMLN_01438;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01438;product=hypothetical protein
+icmC contig_1	Prodigal:002006	CDS	1354147	1354764	.	+	0	ID=AAONHMLN_01439;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01439;product=hypothetical protein
+icmD contig_1	Prodigal:002006	CDS	1354893	1355279	.	+	0	ID=AAONHMLN_01440;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01440;product=hypothetical protein
+icmJ contig_1	Prodigal:002006	CDS	1356297	1356911	.	+	0	ID=AAONHMLN_01443;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01443;product=hypothetical protein
+icmB contig_1	Prodigal:002006	CDS	1357020	1360064	.	+	0	ID=AAONHMLN_01444;inference=ab initio prediction:Prodigal:002006;locus_tag=AAONHMLN_01444;product=hypothetical protein
+
+

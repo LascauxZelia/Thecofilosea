@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 11 8:09:35 2024
+
+@author: Zelia
+"""
+## modules
 import os
 
 dir = "/home/zelia/Desktop/Nanopore/Fisci_genes/final/mafft/"
