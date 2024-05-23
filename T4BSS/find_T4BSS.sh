@@ -1,4 +1,4 @@
-## Find T4BSS genes
+## Find T4BSS genes from our assembly
 # Make Legionella pneumophila db
 makeblastdb -in GCA_001753085.1_ASM175308v1_genomic.fna -dbtype nucl -out Lpn_db
 #Comparision with Legionella pneumophila genome
