@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Charger les données depuis les fichiers en supprimant l'en-tête du fichier TSV
+besthits_df = pd.read_csv('besthits_id.txt', header=None, names=['Protein_Name'])
+annotation_df = pd.read_csv('Fisci.tsv', sep='\t', header=None, usecols=[0, 6], names=['Protein_Name', 'Annotation'])
+
+# Fusionner les deux DataFrames sur la colonne 'Protein_Name'
+merged_df = pd.merge(besthits_df, annotation_df, on='Protein_Name', how='left')
+
+# Enregistrer le résultat dans un nouveau fichier
+merged_df.to_csv('besthits_with_annotation.txt', sep='\t', index=False)
