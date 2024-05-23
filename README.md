@@ -21,9 +21,9 @@ Understanding the mechanisms of replication and transmission of endosymbiotic pa
 * Statistics
 
 ## R version
-R 4.0.3
+R 4.3.1
 ## Python version
-Python 3.
+Python 3.10.13
 
 ## R packages
 * library(vegan)
