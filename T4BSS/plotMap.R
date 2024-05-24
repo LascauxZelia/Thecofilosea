@@ -9,10 +9,7 @@ artdb <- "/home/zelia/Desktop/Nanopore/T4BSS/artdb"
 
 #### Read data
 ids <- c("R64", "LegLon", "LegPhi", "Tara121", "LegOak", "AquLus", "Poke", "BerAqu", "Fisci", "RicIso", "CoxRSA93", "LegPhi", "PisSal", "FanHon", "AciFer", "R64")
-##ids <- c("R64", "CoxRSA93", "AquLus", "LegPhi", "BerAqu", "PisSal", "FanHon", "R64")
-##labels <- c("R64 IncI plasmid (Salmonella)", "Coxiella burnetii RSA93", "Aquicella lusitana", "Ca. Pokemonas kadabra", "Legionella pneumophila", "Ca. Berkiella aquae", "Piscirickettsia salmonis", "Fangia hongkongensis", "R64 IncI plasmid (Salmonella)")
 labels <- c("R64 IncI plasmid (Salmonella)", "Legionella longbeachae", "Legionella pneumophila", "Tara121", "Legionella oakridgensis", "Aquicella lusitana", "Ca. Pokemonas kadabra", "Ca. Berkiella aquae", "Ca. Fiscibacter pecunius", "Rickettsiella isopodorum", "Coxiella burnetii RSA93", "Legionella pneumophila", "Piscirickettsia salmonis", "Fangia hongkongensis", "Acidithiobacillus ferrivorans", "R64 IncI plasmid (Salmonella)")
-##ids <- c("R64", "BerAqu", "LegPhi", "PisSal", "R64", "FanHon", "LegPhi")
 
 ## DNA segs
 dna_segs <- list()
@@ -73,7 +70,6 @@ for (i in 1:length(ids)){
 }
 
 cairo_pdf("T4BSS_map_230214.pdf", w=14, h=9)
-##cairo_pdf("T4BSS_map_reduced.pdf", w=10, h=6)
 grid.newpage()
 pushViewport(viewport(layout=grid.layout(1, 2, widths = unit(c(1,0.15),
                                                              rep("null", 2))),

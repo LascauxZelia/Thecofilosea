@@ -10,7 +10,7 @@ from pathlib import Path
 import pandas as pd
 import glob
 
-# Définition de la fonction pour extraire les meilleurs hits d'un fichier psiblast
+# Function to extract best hits from pisblast file
 def extract_best_hits(file_path):
     try:
         df = pd.read_csv(file_path, sep='\t', header=None, usecols=[0, 1, 2, 10, 11])
@@ -22,14 +22,14 @@ def extract_best_hits(file_path):
         print(f"Le fichier {file_path} est vide.")
         return None
 
-# Chemin du répertoire contenant les fichiers psiblast
+# Psiblast files directories path
 psiblast_dir = "/home/zelia/Desktop/Nanopore/flagella/psiblast/"
 output_file = "/home/zelia/Desktop/Nanopore/flagella/psiblast/besthits.tab"
 
-# Initialisation d'un dictionnaire pour stocker les meilleurs hits
+# Initialization of a dictionnary to store the best hits
 best_hits_dict = {'effector':[], 'qseqid':[], 'sseqid':[], 'pident':[], 'evalue':[], 'bitscore':[]}
 
-# Parcours de tous les fichiers psiblast dans le répertoire spécifié
+# Read all the pisblast files
 for file_path in glob.glob(f"{psiblast_dir}/*.psiblast"):
     best_hit = extract_best_hits(file_path)
     if best_hit is not None:
@@ -38,8 +38,8 @@ for file_path in glob.glob(f"{psiblast_dir}/*.psiblast"):
         for key in ['qseqid', 'sseqid', 'pident', 'evalue', 'bitscore']:
             best_hits_dict[key].append(best_hit[key])
 
-# Création du DataFrame à partir du dictionnaire
+# Dataframe creation from the dictionnary
 best_hits_df = pd.DataFrame.from_dict(best_hits_dict)
 
-# Écriture du DataFrame dans un fichier de sortie
+# Writing the df in the output file
 best_hits_df.to_csv(output_file, sep='\t', index=False)
