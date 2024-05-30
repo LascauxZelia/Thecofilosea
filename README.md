@@ -16,9 +16,11 @@ Understanding the mechanisms of replication and transmission of endosymbiotic pa
 #### Keywords: Endosymbionts; Horizontal transmission; Legionellales; Mutualism-parasitism continuum; T4BSS
 
 ## Scripts
-* Non-Metric Dimensional Scaling (NMDS)
-* Diversity index
-* Statistics
+* Genome assembly steps (assembly.sh)
+* Genome size (genome_size.R)
+* T4BSS (find_T4BSS.sh, extract_CDS.py, mappintab_T4BSS.py, mafft_loop.sh, ConcatAlignementsT4BSS.py, plotMap.R)
+* Effector (BestHits.py, add_annotation.py)
+* Tree (create_mapping_tab.py, concatenateRenameAlignment.pl)
 
 ## R version
 R 4.3.1
@@ -26,17 +28,37 @@ R 4.3.1
 Python 3.10.13
 
 ## R packages
-* library(vegan)
-* library(stats4)
-* library(ade4)
+* genoPlotR
+* ggplot2
+* dplyr
+* readr
+* ggrepel
+* gridExtra
 
-## Python libraries
+## Python modules
+* AlignIO
+* SeqIO
+* Seq
+* SeqRecord
+* shutil
+* pandas
+* glob
+* os
+* Path
 
-
-## Two endosymbionts 'Ca. Pokemonas kadabra' and 'Ca. Fiscibacter pecunius'
-- Genomes assembly (Ratatosk, flye, samtools)
-- Phylogenomics (mafft, trimAl, iqtree2)
-- Flagella genes (tblastx)
-- T4BSS genes (tblastx - L. pneumophila reference (ACT))
-- T4BSS genes order (genoplotR)
-- T4BSS phylogeny (mafft, trimAl, iqtree2)
+## Bioinformatics tools
+* Filtlong
+* Porechop
+* FastQC
+* Flye
+* Bwa
+* Samtools
+* Ratatosk
+* miComplete
+* barrnap
+* seqtk
+* blast (psiblast, tblastx)
+* mafft
+* trimAl
+* iqtree2
+* ACT
