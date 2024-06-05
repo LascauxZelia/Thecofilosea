@@ -23,17 +23,17 @@ seqtk subseq assembly.fasta subsetIDs.txt > contigs_subset.fasta
 prokka contig_subset.fasta -outdir prokka --prefix 3C_prokka
 # 10. Map contigs with 16S RNA againt filtered reads from the start
 minimap2 -t 14 -x map-ont -a -o /mapping/3C_16S_mapping.sam contigs_subset.fasta ratatosk_reads.fastq 
-# 11. Run miComplete
-find -maxdepth 1 -type f -name "*.fna" | miCompletelist.sh > test_set.tab
-miComplete test_set.tab --hmms Bact105 --weights Bact105 --threads 14 --hlist list > results.tab
-# 12. Run barnnap, extract 16S and blast 16S
-barrnap -o contig_1456_rrna.fa contig_1456.fasta
-# 13. Binning metawrap
+# 11. Medaka
+medaka_consensus -i ratatosk_reads.fastq -d 3C_assembly/assembly.fasta -o medaka_3C -t 4 -m r941_min_high_g303
+# 12. Binning metawrap
 metawrap binning -o Initial_binnig -t 32 -a assembly.fasta --metabat2 --maxbin2 --concoct --single-end ratatosk_reads.fastq
 metawrap bin_refinement -o bin_refinement -t 32 -A Initial_binnig/metabat2_bins/ -B Initial_binnig/maxbin2_bins/ -C Initial_binnig/concoct_bins/ -c 50 -x 10
-# 14. Medaka
-medaka_consensus -i ratatosk_reads.fastq -d 3C_assembly/assembly.fasta -o medaka_3C -t 4 -m r941_min_high_g303
-# 15. Calculate the average of the CDs length for the prokka output
+# 13. Run miComplete
+find -maxdepth 1 -type f -name "*.fna" | miCompletelist.sh > test_set.tab
+miComplete test_set.tab --hmms Bact105 --weights Bact105 --threads 14 --hlist list > results.tab
+# 14. Calculate the average of the CDs length for the prokka output
 awk 'NR > 1 {sum += $3} END {print sum / (NR - 1)}' bin5.tsv
-# 16. Calculate the sum of genome that is coding (from prokka output)
+# 15. Calculate the sum of genome that is coding (from prokka output)
 awk 'NR > 1 {sum += $3} END {print sum}' bin5.tsv
+# 16. Run barnnap, extract 16S and blast 16S (check)
+barrnap -o contig_1456_rrna.fa contig_1456.fasta
